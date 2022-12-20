@@ -1,0 +1,36 @@
+.login-button {
+    position: relative;
+    &:hover {
+        .login-button__nav-wrapper {
+            display: block;
+        }
+    }
+    &__nav-wrapper {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        height: fit-content;
+        z-index: 2;
+        padding-top: 16px;
+    }
+    &__items-holder {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        background-color: #ccc;
+        padding: 32px 16px 16px;
+        a {
+            width: 100%;
+            border-bottom: 1px solid #333;
+            padding: 8px 16px;
+        }
+        div {
+            width: 100%;
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+    }
+}

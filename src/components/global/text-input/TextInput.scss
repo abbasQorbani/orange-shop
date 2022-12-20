@@ -1,0 +1,20 @@
+@use '../../../assets/global-styles/mixin.scss';
+.text-input {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 4px;
+    position: relative;
+    &__input {
+        width: 100%;
+        @include mixin.input()
+    }
+    &__message {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px;
+        color: red;
+        position: absolute;
+        top: 90%;
+        left: 0;
+    }
+}

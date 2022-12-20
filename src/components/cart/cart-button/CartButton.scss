@@ -1,0 +1,10 @@
+@use '../../../assets/global-styles/mixin.scss';
+.cart-button {
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+    span {
+        margin-left: 8px;
+    }
+}

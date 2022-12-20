@@ -1,0 +1,13 @@
+@use '../../../assets/global-styles/mixin.scss';
+.order-item {
+    width: 100%;
+    height: 48px;
+    @include mixin.border(1px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    &:not(:last-of-type) {
+        margin-bottom: 16px;
+    }
+}

@@ -1,0 +1,14 @@
+@use '../../../assets/global-styles/mixin.scss';
+.change-profile {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__input {
+        @include mixin.border(1px);
+        width: 100%;
+        height: 48px;
+        padding: 0 16px;
+        margin-bottom: 16px;
+    }
+}

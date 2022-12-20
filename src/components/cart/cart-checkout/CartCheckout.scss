@@ -1,0 +1,27 @@
+@use '../../../assets/global-styles/mixin.scss';
+.checkout-page {
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: relative;
+    padding: 8px 16px;
+    @include mixin.border(1px);
+    p {
+        width: 100%;
+        text-align: center;
+    }
+    &__footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 8px 16px;
+        border-top: 1px solid #333;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        a {
+            @include mixin.button();
+        }
+    }
+}

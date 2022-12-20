@@ -1,0 +1,43 @@
+@use '../../../assets/global-styles/mixin.scss';
+.cart-item {
+    width: 100%;
+    height: 48px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mixin.border(1px);
+    &:not(:last-of-type) {
+        margin-bottom: 16px;
+    }
+    &__content-holder, &__action-holder {
+        display: flex;
+        align-items: center;
+    }
+    &__image-holder {
+        width: 32px;
+        height: 32px;
+        margin-right: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+    &__name {
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 700;
+        color: #333;
+    }
+    &__price {
+        font-size: 14;
+        line-height: 16px;
+        font-weight: 500;
+        color: #333;
+        margin-right: 32px;
+    }
+}

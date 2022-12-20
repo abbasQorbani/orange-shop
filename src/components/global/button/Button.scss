@@ -1,0 +1,4 @@
+@use '../../../assets/global-styles/mixin.scss';
+.osh-button {
+    @include mixin.button();
+}

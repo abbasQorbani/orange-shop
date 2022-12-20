@@ -1,0 +1,22 @@
+@use '../../../assets/global-styles/mixin.scss';
+.advanced-button {
+    width: fit-content;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    user-select: none;
+    @include mixin.border(1px);
+    border-radius: 24px;
+    margin-right: 0;
+    margin-left: auto;
+    &__trash {
+        color: red;
+    }
+    div {
+        padding: 0 8px;
+    }
+    svg {
+        cursor: pointer;
+    }
+}
